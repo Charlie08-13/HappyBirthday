@@ -1,0 +1,135 @@
+body {
+    background-image:url( file:///C:/Users/Admin/Downloads/pexels-photo-220072.webp);
+    background-color: #f0e6f6;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 50px;
+    color: #4a2c5e;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 50px;
+    color:yellow;
+    animation: fadeIn 2s ease-out;
+}
+
+p {
+    font-size: 24px;
+    color:rgb(46, 147, 230);
+    animation: fadeIn 3s ease-out;
+    font-weight: 800;
+}
+
+.message {
+    font-size: 22px;
+    margin-top: 20px;
+    color: #080228;
+    animation: fadeIn 4s ease-out;
+}
+
+.heart {
+    font-size: 50px;
+    color: #ff3366;
+    animation: heartbeat 1s infinite alternate;
+}
+
+.button {
+    background-color: #820644;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    animation: bounce 2s infinite;
+}
+
+.button:hover {
+    background-color: #ff3385;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Confetti animation */
+.confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.confetti div {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff66b2;
+    opacity: 0;
+    animation: confettiFall 5s infinite;
+}
+
+@keyframes confettiFall {
+    0% {
+        opacity: 1;
+        transform: translateY(-100px) rotate(0deg);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(50vh) rotate(180deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+.cake-img{
+    height:100px;
+    width: 100px;
+    margin-right:50px;
+    margin-bottom: 5px;
+    opacity: 0.75;
+}
+.cake-img2{
+    height:100px;
+    width: 100px;
+    margin-right:50px;
+    margin-bottom: 5px;
+    opacity: 0.75;
+}
